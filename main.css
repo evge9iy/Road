@@ -1,0 +1,125 @@
+body    {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow:  hidden;
+    background: linear-gradient(0deg, 
+        #52d7ff 25% 80%, 
+        #006786 100%
+        );
+}
+
+.sun {
+    position: absolute;
+    top: 110px;
+    right: 140px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 40px #ffff5b,
+                0 0 60px #ffff5b,
+                0 0 80px #ffff5b,
+                0 0 100px #ffff5b;
+
+}
+
+.road {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    background: #333;
+    bottom: 0;
+    left: 0;
+}
+.road::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: #189200;
+}
+.road::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    background: repeating-linear-gradient(90deg, transparent 0, transparent 50%,
+    #fff 50%,
+    #fff 100%);
+    transform: translateY(-50%);
+    background-size: 120px;
+    top: 110px;
+    animation: animRoad 0.7s linear infinite;
+}
+
+@keyframes animRoad {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -120px;
+    }
+}
+
+.fa-car-side {
+    position: absolute; 
+    color: #f1f1f1;
+    -webkit-text-stroke: 4px #000;
+    z-index: 10;
+    left: 100px;
+    bottom: 110px;
+    font-size: 200px;
+    animation: animCar 0.5s linear infinite;
+}   
+
+@keyframes animCar {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+}
+
+.fa-cloud {
+    position: absolute; 
+    color: #f1f1f1;
+    -webkit-text-stroke: 2px #000;
+    z-index: 10;
+    font-size: 125px;
+    top: calc(60px * var(--i));
+    left: calc(60px * var(--i));
+    animation: animCloud 9s linear infinite;
+    animation-delay: calc(-1.5s * var(--i));
+}
+
+@keyframes animCloud {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+.fa-tree {
+    position: absolute;
+    color: #4a9400;
+    bottom: 220px;
+    font-size: 150px;
+    z-index: 2;
+    animation: animCloud 7s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+}
+
+.fa-mountain {
+    position: absolute;
+    color: #5a2f2f;
+    bottom: 197px;
+    font-size: 370px;
+    z-index: 2;
+    animation: animCloud 15s linear infinite;
+    animation-delay: calc(-3s * var(--i));
+}
