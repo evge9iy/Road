@@ -129,14 +129,14 @@ body    {
 
     body{
         background: linear-gradient(0deg, 
-        #ff5252 25% 80%, 
-        #860000 100%
+        #52d7ff 25% 80%, 
+        #006786 100%
         );
         max-width: 100%;
     }
     .fa-mountain
     {
-        color: #51d9eb;
+        color: #5a2f2f;
         font-size: 180px;
         bottom: 193px;
     }
