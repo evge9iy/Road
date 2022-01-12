@@ -125,7 +125,7 @@ body    {
 }
 
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
 
     body{
         background: linear-gradient(0deg, 
