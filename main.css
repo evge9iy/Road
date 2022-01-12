@@ -125,7 +125,7 @@ body    {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 376px) {
 
     body{
         background: linear-gradient(0deg, 
@@ -150,8 +150,8 @@ body    {
         left: 0;
     }
     .fa-tree { 
-        bottom: 206px;
-        font-size: 75px;
+        bottom: 202px;
+        font-size: 100px;
     }
     .fa-cloud {
         font-size: 80px;
@@ -168,6 +168,8 @@ body    {
         height: 100px;
     
     }
+    .fa-car-side { 
+        font-size: 150px;
+    }
 }
-
 
