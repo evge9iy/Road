@@ -131,6 +131,7 @@ body    {
         #ff5252 25% 80%, 
         #860000 100%
         );
+        min-height: 100vh;
     }
     .fa-mountain{
         color: #51d9eb;
