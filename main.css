@@ -124,4 +124,17 @@ body    {
     animation-delay: calc(-3s * var(--i));
 }
 
+@media (max-width: 425px) {
+
+    body{
+        background: linear-gradient(0deg, 
+        #ff5252 25% 80%, 
+        #860000 100%
+        );
+    }
+    .fa-mountain{
+        color: #51d9eb;
+    }
+}
+
 
