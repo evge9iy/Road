@@ -130,6 +130,9 @@ body    {
         #8cbe00 100%
         );
     }
+    .fa-cloud {
+        color: #51d9eb;
+    }
     
 }
 
